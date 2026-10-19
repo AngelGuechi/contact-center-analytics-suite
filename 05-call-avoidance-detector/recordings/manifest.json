@@ -1,0 +1,356 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "origin": "Invented scripts, local synthetic voices and generated instrumental tones; no real calls or customer data.",
+  "report_date": "2026-10-06",
+  "sample_rate": 22050,
+  "generator": "piper-tts 1.8.0",
+  "voices": [
+    {
+      "language": "es",
+      "model": "es_MX-ald-medium",
+      "source": "https://huggingface.co/rhasspy/piper-voices/tree/main/es/es_MX/ald/medium",
+      "dataset_license": "Unlicense"
+    },
+    {
+      "language": "en",
+      "model": "en_US-ljspeech-high",
+      "source": "https://huggingface.co/rhasspy/piper-voices/tree/main/en/en_US/ljspeech/high",
+      "dataset_license": "Public domain (LJSpeech)"
+    }
+  ],
+  "files": [
+    {
+      "file": "Calls/70003501.wav",
+      "call_id": "70003501",
+      "name": "Brief greeting",
+      "duration_seconds": 10,
+      "channels": 1,
+      "segments": [
+        {
+          "start_seconds": 0.4,
+          "end_seconds": 1.8744671201814058,
+          "channel": 0,
+          "language": "en",
+          "text": "Hello. Can you hear me?"
+        }
+      ],
+      "music_interval": null,
+      "digital_zero": false,
+      "sha256": "8065dcf5d9a3a489a874083f15f0e37e8c7d5e8e3c3160fa767aa7d5c947f829",
+      "reference_text": "Hello. Can you hear me?",
+      "expected_interpretation": "No agent/customer role attribution"
+    },
+    {
+      "file": "Calls/70003502.wav",
+      "call_id": "70003502",
+      "name": "Saludo breve",
+      "duration_seconds": 10,
+      "channels": 1,
+      "segments": [
+        {
+          "start_seconds": 0.4,
+          "end_seconds": 4.033922902494331,
+          "channel": 0,
+          "language": "es",
+          "text": "Buenas tardes. Gracias por llamar. ¿En qué puedo ayudarle?"
+        }
+      ],
+      "music_interval": null,
+      "digital_zero": false,
+      "sha256": "d6dc458437fa055f9cd4a0268fff0532646f876d89758ad9c75adf5ef31da33a",
+      "reference_text": "Buenas tardes. Gracias por llamar. ¿En qué puedo ayudarle?",
+      "expected_interpretation": "No agent/customer role attribution"
+    },
+    {
+      "file": "Calls/70003507.wav",
+      "call_id": "70003507",
+      "name": "Billing conversation",
+      "duration_seconds": 45,
+      "channels": 1,
+      "segments": [
+        {
+          "start_seconds": 1,
+          "end_seconds": 3.681904761904762,
+          "channel": 0,
+          "language": "en",
+          "text": "Thank you for calling. How can I help you today?"
+        },
+        {
+          "start_seconds": 8,
+          "end_seconds": 10.461315192743765,
+          "channel": 0,
+          "language": "en",
+          "text": "I have a question about the amount on my bill."
+        },
+        {
+          "start_seconds": 16,
+          "end_seconds": 20.226031746031747,
+          "channel": 0,
+          "language": "en",
+          "text": "I can help with that. Please give me a moment to check the details."
+        },
+        {
+          "start_seconds": 29,
+          "end_seconds": 31.48453514739229,
+          "channel": 0,
+          "language": "en",
+          "text": "The extra amount is a payment from last month."
+        },
+        {
+          "start_seconds": 37,
+          "end_seconds": 39.55419501133787,
+          "channel": 0,
+          "language": "en",
+          "text": "Thank you for explaining. Have a good day."
+        }
+      ],
+      "music_interval": null,
+      "digital_zero": false,
+      "sha256": "02d5fdce4b42cda490a8b463f338708e59400919af48a9f58dfd7d5e95e9588d",
+      "reference_text": "Thank you for calling. How can I help you today? I have a question about the amount on my bill. I can help with that. Please give me a moment to check the details. The extra amount is a payment from last month. Thank you for explaining. Have a good day.",
+      "expected_interpretation": "No agent/customer role attribution"
+    },
+    {
+      "file": "Calls/70003508.wav",
+      "call_id": "70003508",
+      "name": "Consulta de recibo",
+      "duration_seconds": 45,
+      "channels": 1,
+      "segments": [
+        {
+          "start_seconds": 1,
+          "end_seconds": 3.6122448979591835,
+          "channel": 0,
+          "language": "es",
+          "text": "Gracias por llamar. ¿En qué le puedo ayudar?"
+        },
+        {
+          "start_seconds": 8,
+          "end_seconds": 11.378503401360545,
+          "channel": 0,
+          "language": "es",
+          "text": "Tengo una pregunta sobre el importe de mi recibo."
+        },
+        {
+          "start_seconds": 16,
+          "end_seconds": 20.226031746031747,
+          "channel": 0,
+          "language": "es",
+          "text": "Claro. Permítame un momento para revisar los detalles."
+        },
+        {
+          "start_seconds": 29,
+          "end_seconds": 32.262403628117916,
+          "channel": 0,
+          "language": "es",
+          "text": "El importe adicional corresponde al mes anterior."
+        },
+        {
+          "start_seconds": 37,
+          "end_seconds": 40.92417233560091,
+          "channel": 0,
+          "language": "es",
+          "text": "Muchas gracias por la explicación. Que tenga buen día."
+        }
+      ],
+      "music_interval": null,
+      "digital_zero": false,
+      "sha256": "035d1e59daef8ee63bbdda6146143f678ef3fad81617a456996a1fe7053296ee",
+      "reference_text": "Gracias por llamar. ¿En qué le puedo ayudar? Tengo una pregunta sobre el importe de mi recibo. Claro. Permítame un momento para revisar los detalles. El importe adicional corresponde al mes anterior. Muchas gracias por la explicación. Que tenga buen día.",
+      "expected_interpretation": "No agent/customer role attribution"
+    },
+    {
+      "file": "Calls/70003509.wav",
+      "call_id": "70003509",
+      "name": "Verified separate channels",
+      "duration_seconds": 45,
+      "channels": 2,
+      "segments": [
+        {
+          "start_seconds": 1,
+          "end_seconds": 3.6122448979591835,
+          "channel": 0,
+          "language": "es",
+          "text": "Gracias por llamar. ¿En qué le puedo ayudar?"
+        },
+        {
+          "start_seconds": 8,
+          "end_seconds": 11.01859410430839,
+          "channel": 1,
+          "language": "es",
+          "text": "Quiero saber cuándo vence el pago de mi recibo."
+        },
+        {
+          "start_seconds": 17,
+          "end_seconds": 21.841360544217686,
+          "channel": 0,
+          "language": "es",
+          "text": "Permítame revisar la fecha. Le agradezco que espere un momento."
+        },
+        {
+          "start_seconds": 34,
+          "end_seconds": 36.205895691609975,
+          "channel": 0,
+          "language": "es",
+          "text": "El pago vence el próximo viernes."
+        },
+        {
+          "start_seconds": 40,
+          "end_seconds": 41.88081632653061,
+          "channel": 1,
+          "language": "es",
+          "text": "Gracias. Eso era todo."
+        }
+      ],
+      "music_interval": null,
+      "digital_zero": false,
+      "sha256": "5cb472013717b3489ae9662b2f47e2e0c1bd2de724233bc7416e1dd8fb9bf820",
+      "reference_text": "Gracias por llamar. ¿En qué le puedo ayudar? Quiero saber cuándo vence el pago de mi recibo. Permítame revisar la fecha. Le agradezco que espere un momento. El pago vence el próximo viernes. Gracias. Eso era todo.",
+      "expected_interpretation": "Roles are supplied explicitly in the generated CSV"
+    },
+    {
+      "file": "Calls/70003510.wav",
+      "call_id": "70003510",
+      "name": "Long quiet after greeting",
+      "duration_seconds": 45,
+      "channels": 1,
+      "segments": [
+        {
+          "start_seconds": 1,
+          "end_seconds": 4.123083900226757,
+          "channel": 0,
+          "language": "en",
+          "text": "Hello. Thank you for calling. How can I help you?"
+        },
+        {
+          "start_seconds": 34,
+          "end_seconds": 35.53251700680272,
+          "channel": 0,
+          "language": "en",
+          "text": "Hello? Are you still there?"
+        }
+      ],
+      "music_interval": null,
+      "digital_zero": false,
+      "sha256": "9969a5cec4e6796c5e8013133ed829ad501ed78e919d9ae38d09315ab2093bdd",
+      "reference_text": "Hello. Thank you for calling. How can I help you? Hello? Are you still there?",
+      "expected_interpretation": "No agent/customer role attribution"
+    },
+    {
+      "file": "Calls/70003511.wav",
+      "call_id": "70003511",
+      "name": "Audible music and quiet",
+      "duration_seconds": 45,
+      "channels": 1,
+      "segments": [
+        {
+          "start_seconds": 1,
+          "end_seconds": 3.1710657596371883,
+          "channel": 0,
+          "language": "en",
+          "text": "Please hold while I check your account."
+        },
+        {
+          "start_seconds": 34,
+          "end_seconds": 36.96054421768707,
+          "channel": 0,
+          "language": "en",
+          "text": "Thank you for waiting. Your account is up to date."
+        }
+      ],
+      "music_interval": [
+        12,
+        25
+      ],
+      "digital_zero": false,
+      "sha256": "5e02d4b3b157e1fc1d8a3bcfd131a43e18866f9a7213785196b98d37862262c1",
+      "reference_text": "Please hold while I check your account. Thank you for waiting. Your account is up to date.",
+      "expected_interpretation": "No agent/customer role attribution"
+    },
+    {
+      "file": "Calls/70003512.wav",
+      "call_id": "70003512",
+      "name": "English and Spanish",
+      "duration_seconds": 45,
+      "channels": 1,
+      "segments": [
+        {
+          "start_seconds": 1,
+          "end_seconds": 4.459773242630385,
+          "channel": 0,
+          "language": "es",
+          "text": "Hola. Tengo una pregunta sobre mi cuenta."
+        },
+        {
+          "start_seconds": 10,
+          "end_seconds": 12.48453514739229,
+          "channel": 0,
+          "language": "en",
+          "text": "Yes, I can help you with your account."
+        },
+        {
+          "start_seconds": 19,
+          "end_seconds": 23.284081632653063,
+          "channel": 0,
+          "language": "es",
+          "text": "Muchas gracias. Quiero confirmar la fecha de pago."
+        },
+        {
+          "start_seconds": 32,
+          "end_seconds": 35.308843537414965,
+          "channel": 0,
+          "language": "en",
+          "text": "Your payment is due on Friday. Thank you for calling."
+        }
+      ],
+      "music_interval": null,
+      "digital_zero": false,
+      "sha256": "02e5cac9d35636125eca0cecaa463a3d237473500dbc897017414a6e39433a18",
+      "reference_text": "Hola. Tengo una pregunta sobre mi cuenta. Yes, I can help you with your account. Muchas gracias. Quiero confirmar la fecha de pago. Your payment is due on Friday. Thank you for calling.",
+      "expected_interpretation": "No agent/customer role attribution"
+    },
+    {
+      "file": "Calls/70003503.wav",
+      "call_id": "70003503",
+      "name": "Recording with zero samples",
+      "duration_seconds": 10,
+      "channels": 1,
+      "segments": [],
+      "music_interval": null,
+      "digital_zero": true,
+      "sha256": "f24029e05d10c95e43a210695d1539d21b2c07e7df6269ba099ac7f400559874",
+      "reference_text": "",
+      "expected_interpretation": "No agent/customer role attribution"
+    },
+    {
+      "file": "Calls/70003513.wav",
+      "call_id": "70003513",
+      "name": "Opposite-phase channels",
+      "duration_seconds": 25,
+      "channels": 2,
+      "segments": [
+        {
+          "start_seconds": 1,
+          "end_seconds": 7.106848072562358,
+          "channel": 0,
+          "language": "en",
+          "text": "This recording has the same voice on both channels. Check the channel mapping before assigning speaker roles."
+        },
+        {
+          "start_seconds": 16,
+          "end_seconds": 19.610702947845805,
+          "channel": 0,
+          "language": "en",
+          "text": "A quiet period does not prove intentional call avoidance."
+        }
+      ],
+      "music_interval": null,
+      "digital_zero": false,
+      "sha256": "abb8dc7bb581ad99c328eb1bec5c4188632ae77521d87397afc334d4bcd567cb",
+      "reference_text": "This recording has the same voice on both channels. Check the channel mapping before assigning speaker roles. A quiet period does not prove intentional call avoidance.",
+      "expected_interpretation": "No agent/customer role attribution"
+    }
+  ],
+  "reference_note": "Inserted speech ranges are generation landmarks, not perfect VAD ground truth. ASR text is measured separately and can differ from the scripts."
+}

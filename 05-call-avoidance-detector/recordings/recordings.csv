@@ -1,0 +1,11 @@
+recording_file,call_id,call_id_type,recording_scope,channel_layout,agent_channel,customer_channel,audio_start_seconds,audio_end_seconds
+Calls/70003501.wav,70003501,transaction,transaction_leg,mono,,,0,10
+Calls/70003502.wav,70003502,transaction,transaction_leg,mono,,,0,10
+Calls/70003507.wav,70003507,transaction,partial,mono,,,0,45
+Calls/70003508.wav,70003508,transaction,partial,mono,,,0,45
+Calls/70003509.wav,70003509,transaction,partial,separate_roles,0,1,0,45
+Calls/70003510.wav,70003510,transaction,partial,mono,,,0,45
+Calls/70003511.wav,70003511,transaction,partial,mono,,,0,45
+Calls/70003512.wav,70003512,transaction,partial,mono,,,0,45
+Calls/70003503.wav,70003503,transaction,transaction_leg,mono,,,0,10
+Calls/70003513.wav,70003513,transaction,partial,unknown,,,0,25

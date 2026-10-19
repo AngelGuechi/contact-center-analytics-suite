@@ -1,0 +1,13 @@
+services:
+  qa:
+    build: .
+    ports:
+      - "127.0.0.1:8503:8503"
+    environment:
+      QA_DATA_DIR: /data
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+    volumes:
+      - qa-data:/data
+    restart: unless-stopped
+volumes:
+  qa-data:

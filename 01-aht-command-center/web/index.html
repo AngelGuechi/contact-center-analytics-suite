@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AHT Command Center</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">A<span>·</span></div><div><strong>AHT Command Center</strong><small>Operations intelligence</small></div></div>
+      <div class="side-caption">WORKSPACE</div>
+      <nav aria-label="Main navigation">
+        <button class="nav active" data-page="overview"><span>▦</span> Overview</button>
+        <button class="nav" data-page="explore"><span>⌕</span> Explore history</button>
+        <button class="nav" data-page="recommendations"><span>✦</span> Recommendations</button>
+        <button class="nav" data-page="updates"><span>⇪</span> Updates</button>
+      </nav>
+      <div class="side-bottom"><span class="live-dot"></span><div><strong>Local prototype</strong><small>Open on this computer</small></div></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div class="breadcrumbs">OPERATIONS <span>/</span> <b id="crumb">OVERVIEW</b></div><div class="top-right"><span class="tag" id="mode-tag">Loading data</span><span class="tag subtle" id="version-tag">v—</span></div></header>
+      <div class="content">
+        <div class="hero"><div><p class="eyebrow">PERFORMANCE DESK</p><h1 id="page-title">AHT at a glance</h1><p id="page-subtitle">See the largest gaps, understand the trend, and move from data to action.</p></div><div class="hero-graphic"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-number">640<span>s</span></div><small>THE GOAL</small></div></div>
+        <div class="notice" id="notice" role="status" hidden></div>
+        <div class="toolbar"><div class="date-wrap"><label for="report-date">REPORT DATE</label><input id="report-date" type="date"></div><div class="filter-wrap"><label for="supervisor">SUPERVISOR</label><select id="supervisor"><option value="">All supervisors</option></select></div><div class="filter-wrap"><label for="agent">AGENT</label><select id="agent"><option value="">All agents</option></select></div><div class="filter-wrap"><label for="queue">QUEUE</label><select id="queue"><option value="">All queues</option></select></div><button class="reset" id="reset-filters">Reset filters</button></div>
+        <div class="meta-strip"><div><span class="meta-dot"></span><span id="cutoff">Waiting for source data</span></div><div id="last-publish">No publication yet</div></div>
+
+        <section class="page" id="page-overview">
+          <div class="section-head"><div><p class="eyebrow">THE SCORECARD</p><h2>Performance snapshot</h2></div><div class="goal-note">All AHT values in seconds · Goal <strong>640s</strong></div></div>
+          <div class="kpis" id="kpis"></div>
+          <div class="grid two"><article class="panel trend-panel"><div class="panel-head"><div><p class="eyebrow">LAST 30 DAYS</p><h3>AHT trend</h3></div><span class="mini-legend"><i></i> 640s goal</span></div><div id="trend"></div></article><article class="panel"><div class="panel-head"><div><p class="eyebrow">WHERE TIME GOES</p><h3>Component average</h3></div><span class="muted">Selected day</span></div><div id="components"></div></article></div>
+          <div class="grid two"><article class="panel"><div class="panel-head"><div><p class="eyebrow">PRIORITY VIEW</p><h3>Highest agent gaps</h3></div><button class="text-button" data-go="explore">View all →</button></div><div id="top-agents"></div></article><article class="panel"><div class="panel-head"><div><p class="eyebrow">TEAM VIEW</p><h3>Highest supervisor gaps</h3></div><button class="text-button" data-go="explore">View all →</button></div><div id="top-supervisors"></div></article></div>
+        </section>
+
+        <section class="page" id="page-explore" hidden>
+          <div class="section-head"><div><p class="eyebrow">EXPLORE</p><h2>Find the pattern</h2></div><div class="select-inline"><label for="rank-period">RANK BY</label><select id="rank-period"><option value="today">Selected day</option><option value="yesterday">Previous day</option><option value="mtd">Month to date</option></select></div></div>
+          <article class="panel"><div class="panel-head"><div><p class="eyebrow">AGENT DETAIL</p><h3>Agent performance</h3></div><span class="muted">Sorted by excess minutes</span></div><div class="table-scroll" id="agent-table"></div></article>
+          <div class="grid two"><article class="panel"><div class="panel-head"><div><p class="eyebrow">SUPERVISORS</p><h3>Team performance</h3></div></div><div class="table-scroll" id="supervisor-table"></div></article><article class="panel"><div class="panel-head"><div><p class="eyebrow">QUEUES</p><h3>Queue performance</h3></div></div><div class="table-scroll" id="queue-table"></div></article></div>
+          <article class="panel"><div class="panel-head"><div><p class="eyebrow">DAILY HISTORY</p><h3>Recent days</h3></div><span class="muted">Weighted from total seconds ÷ calls</span></div><div class="table-scroll" id="history-table"></div></article>
+        </section>
+
+        <section class="page" id="page-recommendations" hidden>
+          <div class="section-head"><div><p class="eyebrow">COACHING INTELLIGENCE</p><h2>Recommended next steps</h2></div><div class="select-inline"><label for="recommendation-period">PERIOD</label><select id="recommendation-period"><option value="today">Selected day</option><option value="mtd">Month to date</option></select></div></div>
+          <div class="guidance"><span>✦</span><p>Suggestions are based on measured talk, hold, and wrap time. They are hypotheses for supervisor review, not a judgment of the agent or a guaranteed saving.</p></div>
+          <div id="recommendation-list"></div>
+        </section>
+
+        <section class="page" id="page-updates" hidden>
+          <div class="section-head"><div><p class="eyebrow">DATA INTAKE</p><h2>Update the dashboard</h2></div><span class="tag">Excel export · .xlsx</span></div>
+          <div class="grid update-grid"><article class="panel upload-panel"><div class="panel-head"><div><p class="eyebrow">NEW INTERVAL</p><h3>Upload a completed export</h3></div></div><p class="muted">Choose the file downloaded from the source tool. Enter the exact start and end of its export window. The end time is exclusive.</p><form id="upload-form"><label class="drop" id="drop-zone" for="upload-file"><span class="upload-icon">⇪</span><strong id="file-label">Choose or drop an Excel file</strong><small>sample_call_detail.xlsx or Calls_…_r01.xlsx · Max 25 MB</small></label><input type="file" id="upload-file" accept=".xlsx" required hidden><div class="form-grid"><label>Interval start<input type="datetime-local" id="interval-start" required></label><label>Interval end<input type="datetime-local" id="interval-end" required></label><label>Revision<input type="number" id="revision" value="1" min="1" max="9999" required></label></div><button type="submit" class="primary" id="upload-button">Validate & publish <span>→</span></button></form><div class="upload-result" id="upload-result" hidden></div></article><article class="panel steps-panel"><p class="eyebrow">THREE STEPS</p><h3>A simple routine</h3><div class="step"><b>01</b><div><strong>Download</strong><p>Export a completed 15–30 minute window from the source tool.</p></div></div><div class="step"><b>02</b><div><strong>Upload</strong><p>Select the file and enter the export window. Use revision 2 or higher for a corrected window.</p></div></div><div class="step"><b>03</b><div><strong>Review</strong><p>Wait for “Published,” then verify the call count and source cutoff.</p></div></div><div class="help-box">Accepted originals are stored under <code>data/History/YYYY/MM/DD/</code>. A corrected revision replaces the earlier window in the metrics.</div></article></div>
+          <article class="panel"><div class="panel-head"><div><p class="eyebrow">AUDIT TRAIL</p><h3>Recent update attempts</h3></div><button class="text-button" id="refresh-runs">Refresh ↻</button></div><div class="table-scroll" id="runs-table"></div></article>
+        </section>
+        <footer>LOCAL PROTOTYPE <span>·</span> AHT Command Center V3 <span>·</span> Metrics from accepted Voice calls</footer>
+      </div>
+    </main>
+  </div>
+  <script src="/assets/app.js"></script>
+</body>
+</html>

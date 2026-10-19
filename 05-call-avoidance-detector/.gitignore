@@ -1,0 +1,11 @@
+.venv/
+.venv-*/
+runtime/
+__pycache__/
+*.py[cod]
+frontend/node_modules/
+.env
+.env.*
+!config.example.json
+*.log
+wheelhouse/

@@ -1,0 +1,20 @@
+[project]
+name = "aht-backend"
+version = "0.1.0"
+description = "Live AHT Command Center backend (use case 1)."
+requires-python = ">=3.14"
+dependencies = [
+  "polars>=1.44",
+  "fastexcel>=0.11",
+  "tzdata>=2026.4",  # Windows has no time zone database for Python's zoneinfo
+]
+
+[dependency-groups]
+dev = ["pytest>=9", "xlsxwriter>=3.2"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

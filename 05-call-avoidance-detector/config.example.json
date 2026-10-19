@@ -1,0 +1,8 @@
+{
+  "host": "127.0.0.1",
+  "port": 8505,
+  "explanations": "computed",
+  "data_directory_environment_variable": "CA_DATA_DIR",
+  "port_environment_variable": "CA_PORT",
+  "note": "Defaults reference, not a loaded configuration file. Use environment variables and Rules. No model key, Excel, Codex or Node is needed for daily use."
+}

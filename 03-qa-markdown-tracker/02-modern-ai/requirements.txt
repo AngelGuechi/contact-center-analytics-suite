@@ -1,0 +1,8 @@
+# Tested direct dependencies. Update these deliberately and rerun the checks.
+openpyxl==3.1.5
+streamlit==1.65.0
+pandas==2.3.3
+requests==2.34.2
+matplotlib==3.11.2
+altair==6.3.0
+tzdata==2026.5
